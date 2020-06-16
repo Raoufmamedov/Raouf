@@ -1,0 +1,204 @@
+
+(c) Корпорация Майкрософт (Microsoft Corporation), 2019. Все права защищены.
+
+C:\Users\User>cd
+C:\Users\User
+
+C:\Users\User>cd ../
+
+C:\Users>../
+".." не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users>cd user
+
+C:\Users\User>cd ../ ../
+
+C:\Users>new
+"new" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users>mkdir test-git
+Отказано в доступе.
+
+C:\Users>user
+"user" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users>User
+"User" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users>cd User
+
+C:\Users\User>mkdir test-git
+
+C:\Users\User>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\User>cd test-git
+
+C:\Users\User\test-git>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\User\test-git>mkdir new
+
+C:\Users\User\test-git>cd new
+
+C:\Users\User\test-git\new>git init
+Initialized empty Git repository in C:/Users/User/test-git/new/.git/
+
+C:\Users\User\test-git\new>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Users\User\test-git\new>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        "\320\235\320\276\320\262\321\213\320\271 \321\202\320\265\320\272\321\201\321\202\320\276\320\262\321\213\320\271 \320\264\320\276\320\272\321\203\320\274\320\265\320\275\321\202.txt"
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\User\test-git\new>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+C:\Users\User\test-git\new>git add this.js
+fatal: pathspec 'this.js' did not match any files
+
+C:\Users\User\test-git\new>git add newtext.txt
+
+C:\Users\User\test-git\new>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   newtext.txt
+
+
+C:\Users\User\test-git\new>git commit -m "Init something unknown"
+[master (root-commit) 1d9e3b8] Init something unknown
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 newtext.txt
+
+C:\Users\User\test-git\new>git status
+initial commit                                                                                                      # what am I doing here                                                                                              # with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Changes to be committed:
+#       new file:   newtext1.txt
+#
+~                                                                                                                   ~                                                                                                                   ~                                                                                                                   ~                                                                                                                   ~                                                                                                                   ~                                                                                                                   ~                                                                                                                   ~                                                                                                                   ~                                                                                                                   ~                                                                                                                   ~                                                                                                                   ~                                                                                                                   ~                                                                                                                   ~                                                                                                                   ~                                                                                                                   ~                                                                                                                   ~                                                                                                                   ~                                                                                                                   ~                                                                                                                   ~                                                                                                                   C:/Users/User/test-git/new/.git/COMMIT_EDITMSG[+] [unix] (23:57 16/06/2020)                                 1,14 All"C:/Users/User/test-git/new/.git/COMMIT_EDITMSG" [converted][unix] 7L, 116C written
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[master bdfc147] initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 newtext1.txt
+
+C:\Users\User\test-git\new>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\User\test-git\new>git commit
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\User\test-git\new>git add newtext.txt
+
+C:\Users\User\test-git\new>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\User\test-git\new>git branch awesome-branch
+
+C:\Users\User\test-git\new>git checkout awesome-branch
+Switched to branch 'awesome-branch'
+
+C:\Users\User\test-git\new>Чтобы приступить к работе надо изменениями для «чёрной пятницы», создадим специальную ветку:
+"Чтобы" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Users\User\test-git\new>
+C:\Users\User\test-git\new>git branch black-friday
+
+C:\Users\User\test-git\new>
+C:\Users\User\test-git\new>git checkout black-friday
+Switched to branch 'black-friday'
+
+C:\Users\User\test-git\new>git checkout black-friday
+Already on 'black-friday'
+
+C:\Users\User\test-git\new>git add index.html
+fatal: pathspec 'index.html' did not match any files
+
+C:\Users\User\test-git\new>git commit -m "basic changes for Black Friday"
+On branch black-friday
+nothing to commit, working tree clean
+
+C:\Users\User\test-git\new>git checkout master
+Switched to branch 'master'
+
+C:\Users\User\test-git\new>git merge black-friday
+Already up to date.
+
+C:\Users\User\test-git\new>git branch -d black-friday
+Deleted branch black-friday (was bdfc147).
+
+C:\Users\User\test-git\new>git merge master
+Already up to date.
+
+C:\Users\User\test-git\new>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\User\test-git\new>git remote add origin https://github.com/Raoufmamedov/Raouf.git
+
+C:\Users\User\test-git\new>git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 422 bytes | 422.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Raoufmamedov/Raouf.git
+ * [new branch]      master -> master
+
+C:\Users\User\test-git\new>https://zen.yandex.ru/media/svetlanapetropol/kak-ne-poteriat-svoi-staj-izza-elektronnyh-trudovyh-knijek-doljen-znat-kajdyi-5ee91f0000996d1757259007
